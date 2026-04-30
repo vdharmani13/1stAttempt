@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Dharmani Advocates</title>
+  <meta name="description" content="Contact Dharmani Advocates for a confidential consultation on corporate litigation, arbitration, insolvency, or securitisation matters." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .disclaimer-box {
+      background: var(--off-white);
+      border: 1px solid var(--grey-light);
+      border-left: 4px solid var(--gold);
+      padding: 20px 24px;
+      font-size: 0.82rem;
+      color: var(--text-light);
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    .disclaimer-box strong { color: var(--navy); }
+
+    .success-msg {
+      display: none;
+      background: #e8f5e9;
+      border: 1px solid #a5d6a7;
+      border-left: 4px solid #4caf50;
+      padding: 18px 22px;
+      color: #2e7d32;
+      font-size: 0.92rem;
+      margin-top: 16px;
+    }
+
+    .map-placeholder {
+      width: 100%;
+      height: 400px;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.5);
+      gap: 12px;
+      margin-top: 80px;
+    }
+    .map-placeholder__icon { font-size: 3rem; }
+    .map-placeholder__text {
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    .offices-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+      margin-top: 60px;
+    }
+
+    .office-card {
+      background: var(--white);
+      border: 1px solid var(--grey-light);
+      padding: 36px 32px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .office-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--gold);
+    }
+
+    .office-card__city {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+
+    .office-card__detail {
+      display: flex;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: var(--text-light);
+      margin-bottom: 10px;
+      align-items: flex-start;
+    }
+
+    .office-card__detail-icon { color: var(--gold); flex-shrink: 0; }
+
+    @media (max-width: 680px) {
+      .offices-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav nav--solid" id="navbar">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-name">Dharmani Advocates</span>
+        <span class="nav__logo-tag">Advocates &amp; Solicitors</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="practice-areas.html" class="nav__link">Practice Areas</a></li>
+        <li><a href="team.html" class="nav__link">Our Team</a></li>
+        <li><a href="contact.html" class="nav__link active">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--gold nav__cta">Consult Us</a>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="mobile-nav__link">Home</a>
+    <a href="about.html" class="mobile-nav__link">About</a>
+    <a href="practice-areas.html" class="mobile-nav__link">Practice Areas</a>
+    <a href="team.html" class="mobile-nav__link">Our Team</a>
+    <a href="contact.html" class="mobile-nav__link">Contact</a>
+    <a href="contact.html" class="btn btn--gold">Consult Us</a>
+  </div>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__content">
+        <div class="page-hero__breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Contact Us</span>
+        </div>
+        <span class="section-label">Get in Touch</span>
+        <h1 class="page-hero__title">Contact Dharmani Advocates</h1>
+        <p style="color:rgba(255,255,255,0.65); max-width:580px; line-height:1.8;">
+          Reach out for a confidential, obligation-free consultation. Our senior advocates
+          will review your matter and respond promptly.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-split">
+
+        <!-- Left: Info -->
+        <div class="reveal">
+          <span class="section-label">Our Details</span>
+          <h2 class="section-title">How to Reach Us</h2>
+          <div class="divider"></div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">📍</div>
+            <div>
+              <div class="contact-info__label">Office Address</div>
+              <div class="contact-info__value">
+                [Full Office Address]<br>
+                [City, State — PIN Code]<br>
+                India
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">📞</div>
+            <div>
+              <div class="contact-info__label">Phone</div>
+              <div class="contact-info__value">
+                +91 [Phone Number]<br>
+                +91 [Alternate Number]
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">✉️</div>
+            <div>
+              <div class="contact-info__label">Email</div>
+              <div class="contact-info__value">
+                info@dharmaniadvocates.com<br>
+                [partner-name]@dharmaniadvocates.com
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">🕐</div>
+            <div>
+              <div class="contact-info__label">Office Hours</div>
+              <div class="contact-info__value">
+                Monday – Friday: 9:30 AM – 6:30 PM<br>
+                Saturday: 10:00 AM – 2:00 PM<br>
+                Sunday: Closed
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:36px;">
+            <p style="font-size:0.9rem; color:var(--text-light); line-height:1.8;">
+              For urgent matters outside office hours, please send an email with
+              "URGENT" in the subject line and a brief description of the matter.
+              A senior advocate will respond as soon as possible.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="reveal reveal-delay-2">
+          <span class="section-label">Write to Us</span>
+          <h2 class="section-title">Send a Message</h2>
+          <div class="divider"></div>
+
+          <div class="disclaimer-box">
+            <strong>Confidentiality Notice:</strong> Information shared via this form is treated as
+            strictly confidential. Submitting this form does not create an attorney-client
+            relationship. We will review your enquiry and respond within 1–2 business days.
+          </div>
+
+          <form class="form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" class="form-control"
+                  placeholder="Your first name" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" class="form-control"
+                  placeholder="Your last name" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address *</label>
+              <input type="email" id="email" name="email" class="form-control"
+                placeholder="your@email.com" required />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-control"
+                  placeholder="+91 98765 43210" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="org">Organisation / Company</label>
+                <input type="text" id="org" name="org" class="form-control"
+                  placeholder="Your company name" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="practiceArea">Area of Enquiry *</label>
+              <select id="practiceArea" name="practiceArea" class="form-control form-select" required>
+                <option value="" disabled selected>Select a practice area</option>
+                <option value="corporate-litigation">Corporate Litigation</option>
+                <option value="arbitration">Arbitration</option>
+                <option value="insolvency">Insolvency &amp; Bankruptcy (IBC)</option>
+                <option value="securitisation">Securitisation &amp; Debt Recovery (SARFAESI / DRT)</option>
+                <option value="other">Other / General Enquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Brief Description of Matter *</label>
+              <textarea id="message" name="message" class="form-control"
+                placeholder="Please describe your matter briefly. Do not include highly sensitive information at this stage."
+                rows="5" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label style="display:flex; align-items:flex-start; gap:10px; cursor:pointer; font-size:0.85rem; color:var(--text-light);">
+                <input type="checkbox" id="consent" name="consent" required
+                  style="margin-top:3px; accent-color: var(--gold-dark); width:16px; height:16px;" />
+                I have read the confidentiality notice above and consent to Dharmani Advocates
+                processing my enquiry information. I understand this does not create an
+                attorney-client relationship.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn--navy" style="width:100%; justify-content:center;">
+              Send Enquiry →
+            </button>
+
+            <div class="success-msg" id="successMsg">
+              Thank you for your enquiry. We will review your matter and get back to you
+              within 1–2 business days.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OFFICES ===== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">Where We Are</span>
+        <h2 class="section-title">Our Offices</h2>
+        <div class="divider divider--center"></div>
+        <p class="section-sub" style="margin: 0 auto;">
+          We are based in [City] and maintain active practice before courts and tribunals
+          across India through our network of co-counsel.
+        </p>
+      </div>
+
+      <div class="offices-grid">
+        <div class="office-card reveal reveal-delay-1">
+          <div class="office-card__city">📍 [Primary City] — Head Office</div>
+          <div class="office-card__detail">
+            <span class="office-card__detail-icon">🏢</span>
+            <span>[Full Street Address, Floor/Suite, Building Name]<br>[City, State — PIN Code]</span>
+          </div>
+          <div class="office-card__detail">
+            <span class="office-card__detail-icon">📞</span>
+            <span>+91 [Phone Number]</span>
+          </div>
+          <div class="office-card__detail">
+            <span class="office-card__detail-icon">✉️</span>
+            <span>info@dharmaniadvocates.com</span>
+          </div>
+          <div class="office-card__detail">
+            <span class="office-card__detail-icon">🕐</span>
+            <span>Mon–Fri: 9:30 AM – 6:30 PM · Sat: 10 AM – 2 PM</span>
+          </div>
+        </div>
+
+        <div class="office-card reveal reveal-delay-2">
+          <div class="office-card__city">🌐 Pan-India Practice</div>
+          <div class="office-card__detail">
+            <span class="office-card__detail-icon">⚖️</span>
+            <span>Supreme Court of India, New Delhi</span>
+          </div>
+          <div class="office-card__detail">
+            <span class="office-card__detail-icon">⚖️</span>
+            <span>NCLT Benches — Mumbai, Delhi, Chennai, Kolkata, Hyderabad &amp; others</span>
+          </div>
+          <div class="office-card__detail">
+            <span class="office-card__detail-icon">⚖️</span>
+            <span>DRT Benches across India</span>
+          </div>
+          <div class="office-card__detail">
+            <span class="office-card__detail-icon">⚖️</span>
+            <span>Various High Courts — through co-counsel network</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map placeholder — replace with actual Google Maps embed -->
+      <div class="map-placeholder reveal">
+        <div class="map-placeholder__icon">📍</div>
+        <div class="map-placeholder__text">
+          Map will appear here<br>
+          <small style="font-size:0.75rem; opacity:0.6;">(Replace with Google Maps embed for your office location)</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BAR COUNCIL DISCLAIMER ===== -->
+  <section class="section" style="padding: 48px 0;">
+    <div class="container">
+      <div style="background: var(--off-white); border: 1px solid var(--grey-light); padding: 32px 36px; max-width: 900px; margin: 0 auto;">
+        <h3 style="font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; letter-spacing: 1px; text-transform: uppercase;">
+          Bar Council of India — Disclaimer
+        </h3>
+        <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.9;">
+          As per the rules of the Bar Council of India, advocates are not permitted to solicit work or
+          advertise in any manner. By accessing this website, you acknowledge that you are seeking information
+          about Dharmani Advocates of your own accord and that there has been no form of solicitation,
+          advertisement, or inducement by the firm or its members. The content of this website is provided
+          for informational purposes only and should not be construed as legal advice. No attorney-client
+          relationship is created by the use of this website or the submission of information through it.
+          Dharmani Advocates is not responsible for any consequence of any action taken by the user
+          relying on material / information provided on this website.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Dharmani Advocates</div>
+          <div class="footer__brand-tag">Advocates &amp; Solicitors</div>
+          <p class="footer__brand-text">
+            A specialised Indian law firm providing expert legal counsel in corporate
+            litigation, arbitration, insolvency &amp; bankruptcy, and securitisation.
+          </p>
+        </div>
+        <div>
+          <div class="footer__col-title">Quick Links</div>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="about.html" class="footer__link">About the Firm</a></li>
+            <li><a href="practice-areas.html" class="footer__link">Practice Areas</a></li>
+            <li><a href="team.html" class="footer__link">Our Team</a></li>
+            <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Practice Areas</div>
+          <ul class="footer__links">
+            <li><a href="practice-areas.html#corporate-litigation" class="footer__link">Corporate Litigation</a></li>
+            <li><a href="practice-areas.html#arbitration" class="footer__link">Arbitration</a></li>
+            <li><a href="practice-areas.html#insolvency" class="footer__link">Insolvency &amp; Bankruptcy</a></li>
+            <li><a href="practice-areas.html#securitisation" class="footer__link">Securitisation &amp; DRT</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Contact</div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📍</span>
+            <span>[Office Address, City, State — PIN Code]</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📞</span>
+            <span>+91 [Phone Number]</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">✉️</span>
+            <span>info@dharmaniadvocates.com</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">🕐</span>
+            <span>Mon – Sat: 9:30 AM – 6:30 PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Dharmani Advocates. All rights reserved.</span>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">Privacy Policy</a>
+          <a href="#" class="footer__bottom-link">Disclaimer</a>
+          <a href="#" class="footer__bottom-link">Bar Council Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const requiredFields = this.querySelectorAll('[required]');
+      let valid = true;
+      requiredFields.forEach(f => {
+        if (f.type === 'checkbox' && !f.checked) valid = false;
+        else if (f.type !== 'checkbox' && !f.value.trim()) valid = false;
+      });
+      if (valid) {
+        document.getElementById('successMsg').style.display = 'block';
+        this.reset();
+        document.getElementById('successMsg').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      } else {
+        alert('Please fill in all required fields and accept the consent checkbox.');
+      }
+    });
+  </script>
+</body>
+</html>

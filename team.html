@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Team — Dharmani Advocates</title>
+  <meta name="description" content="Meet the advocates and legal professionals at Dharmani Advocates — experts in corporate litigation, arbitration, insolvency, and securitisation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .team-full-card {
+      background: var(--white);
+      border: 1px solid var(--grey-light);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      margin-bottom: 40px;
+      transition: box-shadow 0.3s ease;
+    }
+    .team-full-card:hover { box-shadow: var(--shadow-lg); }
+
+    .team-full-card__photo {
+      background: linear-gradient(135deg, var(--navy), var(--navy-light));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 320px;
+    }
+
+    .team-full-card__body { padding: 40px 44px; }
+
+    .team-full-card__role {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      margin-bottom: 10px;
+    }
+
+    .team-full-card__name {
+      font-size: 2rem;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+
+    .team-full-card__qual {
+      font-size: 0.88rem;
+      color: var(--grey);
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    .team-full-card__bio {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      line-height: 1.85;
+      margin-bottom: 24px;
+    }
+
+    .team-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .team-tag {
+      padding: 6px 14px;
+      background: var(--off-white);
+      border: 1px solid var(--grey-light);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: var(--navy);
+    }
+
+    .team-divider {
+      height: 1px;
+      background: var(--grey-light);
+      margin: 56px 0;
+    }
+
+    .associate-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 860px) {
+      .team-full-card { grid-template-columns: 1fr; }
+      .team-full-card__photo { min-height: 240px; }
+      .team-full-card__body { padding: 28px 24px; }
+      .associate-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 540px) {
+      .associate-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav nav--solid" id="navbar">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-name">Dharmani Advocates</span>
+        <span class="nav__logo-tag">Advocates &amp; Solicitors</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="practice-areas.html" class="nav__link">Practice Areas</a></li>
+        <li><a href="team.html" class="nav__link active">Our Team</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--gold nav__cta">Consult Us</a>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="mobile-nav__link">Home</a>
+    <a href="about.html" class="mobile-nav__link">About</a>
+    <a href="practice-areas.html" class="mobile-nav__link">Practice Areas</a>
+    <a href="team.html" class="mobile-nav__link">Our Team</a>
+    <a href="contact.html" class="mobile-nav__link">Contact</a>
+    <a href="contact.html" class="btn btn--gold">Consult Us</a>
+  </div>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__content">
+        <div class="page-hero__breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Our Team</span>
+        </div>
+        <span class="section-label">The People</span>
+        <h1 class="page-hero__title">Meet Our Advocates</h1>
+        <p style="color:rgba(255,255,255,0.65); max-width:600px; line-height:1.8;">
+          Our strength lies in our people — experienced advocates who combine deep
+          legal knowledge with the commercial acumen that complex matters demand.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PARTNERS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Partners</span>
+        <h2 class="section-title">Founding &amp; Senior Partners</h2>
+        <div class="divider"></div>
+      </div>
+
+      <!-- Partner 1 -->
+      <div class="team-full-card reveal">
+        <div class="team-full-card__photo">
+          <span style="font-size:5rem; color:rgba(201,168,76,0.3);">👤</span>
+        </div>
+        <div class="team-full-card__body">
+          <div class="team-full-card__role">Founding Partner</div>
+          <h2 class="team-full-card__name">Advocate [Partner Name]</h2>
+          <div class="team-full-card__qual">
+            B.A. LL.B. (Hons.) · [University] &nbsp;|&nbsp; Enrolled: Bar Council of [State]
+          </div>
+          <p class="team-full-card__bio">
+            [Partner Name] is the founding partner of Dharmani Advocates and brings over
+            [X] years of specialised experience in corporate litigation, insolvency, and
+            arbitration. [He/She] has appeared in landmark matters before the Supreme Court
+            of India, various High Courts, and the NCLT/NCLAT.
+          </p>
+          <p class="team-full-card__bio">
+            [Add 2–3 more sentences about this partner's background, notable matters,
+            philosophy, or areas of expertise. This is a placeholder — please replace with
+            accurate biographical information.]
+          </p>
+          <div class="team-tags">
+            <span class="team-tag">Corporate Litigation</span>
+            <span class="team-tag">IBC / Insolvency</span>
+            <span class="team-tag">Arbitration</span>
+            <span class="team-tag">Supreme Court</span>
+            <span class="team-tag">NCLT / NCLAT</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Partner 2 -->
+      <div class="team-full-card reveal">
+        <div class="team-full-card__photo">
+          <span style="font-size:5rem; color:rgba(201,168,76,0.3);">👤</span>
+        </div>
+        <div class="team-full-card__body">
+          <div class="team-full-card__role">Senior Partner</div>
+          <h2 class="team-full-card__name">Advocate [Partner Name]</h2>
+          <div class="team-full-card__qual">
+            B.A. LL.B. (Hons.) · [University] &nbsp;|&nbsp; Enrolled: Bar Council of [State]
+          </div>
+          <p class="team-full-card__bio">
+            [Partner Name] is a senior partner at Dharmani Advocates with [X]+ years of
+            experience specialising in SARFAESI enforcement, DRT litigation, and
+            securitisation advisory. [He/She] has represented major banks and NBFCs in
+            high-value debt recovery matters across India.
+          </p>
+          <p class="team-full-card__bio">
+            [Add 2–3 more sentences about this partner's background, notable matters,
+            philosophy, or areas of expertise. This is a placeholder — please replace with
+            accurate biographical information.]
+          </p>
+          <div class="team-tags">
+            <span class="team-tag">Securitisation</span>
+            <span class="team-tag">SARFAESI</span>
+            <span class="team-tag">DRT / DRAT</span>
+            <span class="team-tag">Banking Law</span>
+            <span class="team-tag">NPA Recovery</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ASSOCIATES ===== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Associates</span>
+        <h2 class="section-title">Our Associates &amp; Of Counsel</h2>
+        <div class="divider"></div>
+        <p class="section-sub">
+          Our associate team brings focused expertise and rigorous preparation to every matter.
+        </p>
+      </div>
+
+      <div class="associate-grid">
+
+        <div class="team-card reveal reveal-delay-1">
+          <div class="team-card__photo team-card__photo--placeholder">
+            <span style="font-size:3rem; color:rgba(201,168,76,0.3);">👤</span>
+          </div>
+          <div class="team-card__body">
+            <h3 class="team-card__name">Advocate [Name]</h3>
+            <p class="team-card__role">Senior Associate</p>
+            <p class="team-card__bio">
+              Specialises in insolvency proceedings before NCLT. [X] years of
+              post-enrolment experience. [University, LL.B. Year].
+            </p>
+            <div class="team-tags" style="margin-top:14px;">
+              <span class="team-tag">IBC</span>
+              <span class="team-tag">NCLT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card reveal reveal-delay-2">
+          <div class="team-card__photo team-card__photo--placeholder">
+            <span style="font-size:3rem; color:rgba(201,168,76,0.3);">👤</span>
+          </div>
+          <div class="team-card__body">
+            <h3 class="team-card__name">Advocate [Name]</h3>
+            <p class="team-card__role">Senior Associate</p>
+            <p class="team-card__bio">
+              Focuses on domestic and international arbitration. [X] years of experience.
+              [University, LL.B. Year].
+            </p>
+            <div class="team-tags" style="margin-top:14px;">
+              <span class="team-tag">Arbitration</span>
+              <span class="team-tag">Commercial</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card reveal reveal-delay-3">
+          <div class="team-card__photo team-card__photo--placeholder">
+            <span style="font-size:3rem; color:rgba(201,168,76,0.3);">👤</span>
+          </div>
+          <div class="team-card__body">
+            <h3 class="team-card__name">Advocate [Name]</h3>
+            <p class="team-card__role">Associate</p>
+            <p class="team-card__bio">
+              Specialises in SARFAESI and DRT proceedings. [X] years of experience.
+              [University, LL.B. Year].
+            </p>
+            <div class="team-tags" style="margin-top:14px;">
+              <span class="team-tag">SARFAESI</span>
+              <span class="team-tag">DRT</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== JOIN US ===== -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="about-split" style="gap:60px;">
+        <div class="reveal">
+          <span class="section-label">Careers</span>
+          <h2 class="section-title section-title--white">Join Dharmani Advocates</h2>
+          <div class="divider"></div>
+          <p class="section-sub section-sub--white" style="margin-bottom:24px;">
+            We are always looking for motivated, intellectually rigorous legal professionals
+            who are passionate about corporate and financial law. We offer a stimulating
+            practice environment, genuine mentorship, and exposure to complex, high-value matters
+            from early in one's career.
+          </p>
+          <p class="section-sub section-sub--white" style="margin-bottom:36px;">
+            If you are a law student, fresh enrollee, or experienced advocate interested in
+            joining our team, we invite you to write to us with your CV and a brief note on
+            your areas of interest.
+          </p>
+          <a href="mailto:careers@dharmaniadvocates.com" class="btn btn--gold">
+            Apply / Enquire →
+          </a>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div style="display:flex; flex-direction:column; gap:20px;">
+            <div class="why-item" style="padding:28px;">
+              <div class="why-item__title" style="font-size:0.95rem;">🎓 &nbsp; Internship Programme</div>
+              <p class="why-item__text" style="margin-top:8px;">
+                We offer structured internships to penultimate and final-year law students,
+                with hands-on exposure to ongoing matters.
+              </p>
+            </div>
+            <div class="why-item" style="padding:28px;">
+              <div class="why-item__title" style="font-size:0.95rem;">⚖️ &nbsp; Junior Associates</div>
+              <p class="why-item__text" style="margin-top:8px;">
+                Freshly enrolled advocates with strong academic backgrounds and a keen
+                interest in commercial law are encouraged to apply.
+              </p>
+            </div>
+            <div class="why-item" style="padding:28px;">
+              <div class="why-item__title" style="font-size:0.95rem;">🌟 &nbsp; Lateral Hires</div>
+              <p class="why-item__text" style="margin-top:8px;">
+                Experienced advocates with 3+ years in corporate litigation, insolvency,
+                arbitration, or securitisation are welcome to reach out.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner__content reveal">
+        <h2 class="cta-banner__title">Speak With One of Our Advocates</h2>
+        <p class="cta-banner__sub">
+          Initial consultations are confidential. Reach out to discuss your matter
+          with a senior member of our team.
+        </p>
+        <div class="cta-banner__actions">
+          <a href="contact.html" class="btn btn--gold">Contact Us</a>
+          <a href="practice-areas.html" class="btn btn--outline">Our Practice Areas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Dharmani Advocates</div>
+          <div class="footer__brand-tag">Advocates &amp; Solicitors</div>
+          <p class="footer__brand-text">
+            A specialised Indian law firm providing expert legal counsel in corporate
+            litigation, arbitration, insolvency &amp; bankruptcy, and securitisation.
+          </p>
+        </div>
+        <div>
+          <div class="footer__col-title">Quick Links</div>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="about.html" class="footer__link">About the Firm</a></li>
+            <li><a href="practice-areas.html" class="footer__link">Practice Areas</a></li>
+            <li><a href="team.html" class="footer__link">Our Team</a></li>
+            <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Practice Areas</div>
+          <ul class="footer__links">
+            <li><a href="practice-areas.html#corporate-litigation" class="footer__link">Corporate Litigation</a></li>
+            <li><a href="practice-areas.html#arbitration" class="footer__link">Arbitration</a></li>
+            <li><a href="practice-areas.html#insolvency" class="footer__link">Insolvency &amp; Bankruptcy</a></li>
+            <li><a href="practice-areas.html#securitisation" class="footer__link">Securitisation &amp; DRT</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__col-title">Contact</div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📍</span>
+            <span>[Office Address, City, State — PIN Code]</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📞</span>
+            <span>+91 [Phone Number]</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">✉️</span>
+            <span>info@dharmaniadvocates.com</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">🕐</span>
+            <span>Mon – Sat: 9:30 AM – 6:30 PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Dharmani Advocates. All rights reserved.</span>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">Privacy Policy</a>
+          <a href="#" class="footer__bottom-link">Disclaimer</a>
+          <a href="#" class="footer__bottom-link">Bar Council Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
